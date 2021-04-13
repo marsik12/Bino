@@ -1,0 +1,108 @@
+.contact {
+	padding: $padding;
+	background-color: $whiteColor;
+}
+.contact__title {
+	margin-bottom: 3rem;
+}
+.contact__subtitle {
+	@include paragraphs;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.contact-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.contact-wrapper__item {
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	background-color: $mainBgColor;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+.contact-info {
+	flex-basis: 40.8%;
+	padding: 3rem 9.5rem;
+	box-sizing: border-box;
+}
+.contact-info__item {
+	display: flex;
+	flex-direction: column;
+	margin: 2.75rem 0;
+}
+.contact-info__title {
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+	font-family: $secondFont;
+	font-weight: 600;
+	color: $hoverColor;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.address {
+	a {
+		@include paragraphs;
+		font-size: 1.8rem;
+		&:hover {
+			color: $hoverColor;
+		}
+	}
+}
+.contact-info__links {
+	@include paragraphs;
+	font-size: 1.8rem;
+	&:hover {
+		color: $hoverColor;
+	}
+}
+.contact-form {
+	flex-basis: 56.8%;
+	padding: 0 9.5rem;
+	box-sizing: border-box;
+}
+.form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.form__input {
+	@include paragraphs;
+	font-size: 1.8rem;
+	input {
+		border-bottom: 1px solid #e5e5e5;
+		padding: 2rem 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s;
+		color: $darken;
+		&:focus {
+			border-color: $hoverColor;
+		}
+	}
+}
+.form__textarea {
+	margin-bottom: 3rem;
+	@include paragraphs;
+	font-size: 1.8rem;
+	textarea {
+		padding: 2rem 0;
+		height: 10rem;
+		width: 100%;
+		border-bottom: 1px solid #e5e5e5;
+		transition: all 0.3s;
+		color: $darken;
+		line-height: 2.4rem;
+		&:focus {
+			border-color: $hoverColor;
+		}
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+}

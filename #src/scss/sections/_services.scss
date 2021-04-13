@@ -1,0 +1,130 @@
+.services-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.services-wrapper__info {
+	width: 100%;
+	padding-top: 5rem;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding-right: 8rem;
+	flex-basis: 50%;
+	background-color: #202020;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-basis: 100%;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		flex-basis: 100%;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
+}
+.services__title {
+	color: $whiteColor;
+	padding-right: 2rem;
+	border-right: 6px solid $hoverColor;
+	margin-bottom: 7rem;
+}
+.services-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.service__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 7rem;
+	position: relative;
+}
+.service__item-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.service__title {
+	margin-bottom: 2rem;
+	font-family: $mainFont;
+	font-weight: 600;
+	font-size: 1.8rem;
+	color: $hoverColor;
+	text-transform: uppercase;
+	letter-spacing: 1.35px;
+	transition: all 0.3s;
+}
+.service__description {
+	@include paragraphs;
+	text-align: right;
+}
+.service__item-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: -19%;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: $whiteColor;
+	color: $hoverColor;
+	font-size: 3rem;
+	border: 4px solid #0005;
+	transition: all 0.3s;
+	&:hover {
+		background-color: $darken;
+		color: $whiteColor;
+	}
+}
+.services-wrapper__img {
+	flex-basis: 50%;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-basis: 100%;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		flex-basis: 100%;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
+}
+
+.services-slider__dots {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	transform: translateY(-50%);
+	li {
+		font-size: 0 !important;
+		cursor: pointer;
+		background: #3e3e3e;
+		outline: none;
+		width: 2px;
+		height: 34px;
+		margin-bottom: 10px;
+		transition: background-color 0.3s;
+		&.slick-active,
+		&:hover {
+			background-color: $hoverColor;
+		}
+	}
+}

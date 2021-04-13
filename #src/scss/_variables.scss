@@ -1,0 +1,25 @@
+// TODO Variables for Fonts
+$mainFont: "OpenSans";
+$projectIcons: "projectIcons";
+$secondFont: "SourceSansPro";
+
+// TODO Colors
+$blackColor: #6a6a6a;
+$whiteColor: #f4f5f9;
+$mainBgColor: #ffffff;
+$otherBgColor: #f4f5f9;
+$hoverColor: #e74c3c;
+$linkColor: #e74c3c;
+$darken: darken(
+	$color: #000000,
+	$amount: 0.9,
+);
+
+// TODO Width
+// ? 87.848vw = 1200px;
+$min-width: 320px;
+$max-width: 100vw;
+$container: 120rem;
+
+// TODO Sections Top & Bottom Paddings
+$padding: 14rem 0;

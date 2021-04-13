@@ -1,0 +1,111 @@
+.prices {
+	padding: $padding;
+}
+.prices__title {
+	margin-bottom: 3rem;
+}
+
+.prices__subtitle {
+	margin-bottom: 3rem;
+	@include paragraphs;
+	text-align: center;
+}
+.pt {
+	padding-top: 7rem;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.prices__item {
+	position: relative;
+	flex-basis: 32.5%;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.3s;
+	&:hover {
+		.price__name-content {
+			background-color: $hoverColor;
+		}
+		.price__money {
+			color: $hoverColor;
+		}
+		.recommended-price {
+			background-color: $darken;
+		}
+	}
+}
+.price__name-content {
+	padding: 5rem 0 13rem;
+	width: inherit;
+	background-color: $blackColor;
+	transition: all 0.3s;
+}
+.price__name {
+	text-align: center;
+	font-family: $mainFont;
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: $mainBgColor;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 1.35px;
+}
+.prices__info-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $whiteColor;
+	position: relative;
+}
+.price__counts {
+	width: 15.4rem;
+	height: 15.4rem;
+	display: flex;
+	margin-top: -8.2rem;
+	margin-bottom: 4rem;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 50%;
+	border: 1rem solid rgba($color: #000000, $alpha: 0.1);
+	background-color: $mainBgColor;
+	transition: all 0.3s;
+}
+.price__money {
+	font-size: 36px;
+	font-family: $secondFont;
+	color: #999999;
+	font-weight: 700;
+	line-height: 1;
+}
+.price__month {
+	font-family: $secondFont;
+	color: #999999;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+.price__list {
+	margin-bottom: 5rem;
+}
+.price__list-item {
+	@include paragraphs;
+	text-align: center;
+	text-transform: capitalize;
+}
+.price__button {
+	margin-bottom: 5rem;
+}
+.recommended-price {
+	position: absolute;
+	color: $mainBgColor;
+	font-weight: 600;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	top: 0;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	padding: 1rem;
+	background-color: $hoverColor;
+	transition: all 0.3s;
+}

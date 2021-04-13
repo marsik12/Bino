@@ -1,0 +1,312 @@
+.header {
+	position: relative;
+	background-color: $mainBgColor;
+	max-height: 100vh;
+}
+.header-top {
+	position: fixed;
+	width: 100vw;
+	padding: 4rem 0;
+	z-index: 10000;
+	background: transparent;
+	@media (min-width: 320px) and (max-width: 575px) {
+		padding: 2rem 0;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		padding: 2rem 0;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		padding: 3rem 0;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		padding: 3rem 0;
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		padding: 3rem 0;
+	}
+	@media (min-width: 1400) {
+		padding: 4rem 0;
+	}
+}
+.header__navigation {
+	max-width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	@media (min-width: 320px) and (max-width: 575px) {
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
+}
+.logo {
+	max-width: 15rem;
+	max-height: 6rem;
+}
+.logo__img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+.navigation {
+	flex-basis: 70%;
+	@media (min-width: 320px) and (max-width: 575px) {
+		display: none;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		display: none;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
+}
+.menu {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.menu__link {
+	padding-bottom: 2.2rem;
+	font-family: $mainFont;
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: $whiteColor;
+	border-bottom: 1px solid transparent;
+	transition: all 0.3s;
+	&:hover,
+	&--active {
+		border-bottom: 1px solid $hoverColor;
+		color: $hoverColor;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		padding-bottom: 1.2rem;
+		font-size: 1.3rem;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		padding-bottom: 1.4rem;
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		padding-bottom: 1.5rem;
+	}
+}
+.header-slider {
+	height: 100%;
+	width: 100%;
+}
+.slider__item {
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: block;
+		top: 0;
+		left: 0;
+		background-color: rgba($color: #000000, $alpha: 0.7);
+	}
+	@media (min-width: 320px) and (max-width: 575px) {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
+}
+.slider__item-content {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	.divider {
+		margin-bottom: 3rem;
+		z-index: 5;
+		.divider__rule {
+			background-color: $mainBgColor;
+		}
+		@media (min-width: 320px) and (max-width: 575px) {
+			margin-bottom: 2rem;
+		}
+		@media (min-width: 576px) and (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+		@media (min-width: 768px) and (max-width: 991px) {
+			margin-bottom: 2.5rem;
+		}
+		@media (min-width: 992px) and (max-width: 1199px) {
+			margin-bottom: 2.5rem;
+		}
+		@media (min-width: 1400) {
+			margin-bottom: 5rem;
+		}
+	}
+}
+.slider__title {
+	margin-bottom: 3rem;
+	font-family: $secondFont;
+	font-size: 2.4rem;
+	color: $whiteColor;
+	font-weight: 400;
+	text-transform: capitalize;
+	letter-spacing: 1.2px;
+	z-index: 1;
+	@media (min-width: 320px) and (max-width: 575px) {
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		margin-bottom: 2rem;
+		font-size: 2rem;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		margin-bottom: 2.5rem;
+		font-size: 2rem;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-bottom: 2.5rem;
+	}
+	@media (min-width: 1400) {
+		margin-bottom: 5rem;
+	}
+}
+.slider__subtitle {
+	margin-bottom: 3rem;
+	font-family: $mainFont;
+	font-size: 6.5rem;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 6.5px;
+	color: $whiteColor;
+	z-index: 2;
+}
+.slider__description {
+	margin-bottom: 5rem;
+	width: 60rem;
+	text-align: center;
+	font-family: $mainFont;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	color: $whiteColor;
+	z-index: 3;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 4;
+	button {
+		@include button;
+		&:first-child {
+			margin-right: 1.5rem;
+			@media (min-width: 320px) and (max-width: 575px) {
+				margin-right: 0;
+				margin-bottom: 1.5rem;
+			}
+		}
+		&:last-child {
+			background-color: transparent;
+			border: 1px solid $mainBgColor;
+			&:hover {
+				background-color: $darken;
+				border-color: transparent;
+			}
+		}
+	}
+}
+.header-icon-down {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	left: 50%;
+	bottom: -2%;
+	transform: translateX(-50%);
+	background-color: rgb(244, 245, 249);
+	border-radius: 50%;
+	color: $linkColor;
+	font-size: 3rem;
+	line-height: 6rem;
+	text-align: center;
+	cursor: pointer;
+	border: 5px solid transparent;
+	border-top-color: rgba($color: #000, $alpha: 0.2);
+	border-right-color: rgba($color: #000, $alpha: 0.2);
+	border-left-color: rgba($color: #000, $alpha: 0.2);
+	transition: all 0.3s;
+	box-shadow: 0 0 50px $hoverColor, 0 0 100px $hoverColor, 0 0 150px $hoverColor, 0 0 200px $hoverColor,
+		0 0 250px $hoverColor;
+	animation: animatedIconDown 3s linear infinite;
+}
+
+@keyframes animatedIconDown {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+.slick-arrow {
+	z-index: 60;
+	font-family: $mainFont;
+	background-color: #6f6862;
+	color: #3c3530;
+	transition: all 0.2s;
+	padding-bottom: 0.5rem;
+	font-weight: 700;
+	&:hover {
+		color: $mainBgColor;
+		background-color: $darken;
+	}
+}
+
+.slick-prev {
+	position: absolute;
+	transform: translateY(-50%);
+	width: 4.5rem !important;
+	height: 4.5rem !important;
+	left: 2%;
+	top: 50%;
+	font-size: 2.1rem;
+}
+
+.slick-next {
+	position: absolute;
+	transform: translateY(-50%);
+	right: 2%;
+	top: 50%;
+	width: 4.5rem !important;
+	height: 4.5rem !important;
+	font-size: 2.1rem;
+}

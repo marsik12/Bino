@@ -1,0 +1,14 @@
+.blog {
+	padding: $padding;
+	border-top: 1px solid #d8d9db;
+	background-color: $whiteColor;
+}
+.blog__title {
+	margin-bottom: 3rem;
+	position: relative;
+}
+.blog__subtitle {
+	@include paragraphs;
+	text-align: center;
+	margin-bottom: 3rem;
+}

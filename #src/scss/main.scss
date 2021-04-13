@@ -1,0 +1,59 @@
+@import "./_preloader";
+// TODO Libraries
+@import "../vendors/normalize";
+@import "../vendors/slick/slick";
+
+/*=============================================
+=            MAIN STYLES START            =
+=============================================*/
+
+// TODO Importing fonts
+@mixin font($font_name, $file_name, $weight, $style) {
+	// ? Mixin for fonts
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2"),
+			url("../fonts/#{$file_name}.ttf") format("truetype");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+@font-face {
+	font-family: "projectIcons";
+	src: url("../fonts/projectIcons.ttf?5cpj9r") format("truetype"),
+		url("../fonts/projectIcons.woff?5cpj9r") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+// ? &display=swap&subset=cyrilllic-ext
+@import "./fonts";
+@import "./_icons";
+
+// TODO Base styles
+@import "./base";
+
+// TODO Importing mixins
+@import "./mixins";
+
+// TODO  Importing Variables
+@import "./variables";
+
+@import "./divider";
+
+// TODO Importing other Page Sections
+@import "./sections/header";
+@import "./sections/features";
+@import "./sections/history";
+@import "./sections/services";
+@import "./sections/portfolio";
+@import "./sections/cases";
+@import "./sections/counts";
+@import "./sections/prices";
+@import "./sections/team";
+@import "./sections/partners";
+// @import "./sections/blog";
+@import "./sections/contact";
+@import "./sections/getstart";
+@import "./sections/footer";

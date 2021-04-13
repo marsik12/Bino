@@ -1,0 +1,19 @@
+.divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.divider__rule {
+	width: 8rem;
+	height: 1px;
+	background-color: #999999;
+	display: inline-block;
+}
+.divider__dot {
+	margin: 0 1.4rem;
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: $hoverColor;
+}

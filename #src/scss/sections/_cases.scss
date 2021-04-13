@@ -1,0 +1,100 @@
+.cases {
+	padding: $padding;
+	background-color: $whiteColor;
+}
+.cases__title {
+	margin-bottom: 3rem;
+}
+.cases__subtitle {
+	@include paragraphs;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.cases-wrapper {
+	margin-top: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cases-slider {
+	background-color: $mainBgColor;
+	padding: 8rem 0 5rem;
+	max-width: 66rem;
+	max-height: 66rem;
+	box-sizing: border-box;
+	transform: translateX(8rem);
+}
+.cases-slider__item {
+	text-align: center;
+}
+.cases-slider__item-content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 6rem;
+	&:hover {
+		.case__img {
+			background-color: $hoverColor;
+			transform: rotate(45deg);
+			.icon {
+				color: $whiteColor !important;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+.case__title {
+	font-family: $mainFont;
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: 1.35px;
+	text-transform: uppercase;
+	color: $blackColor;
+}
+.case-mini-rule {
+	background-color: $blackColor;
+	height: 1px;
+}
+.case__info {
+	@include paragraphs;
+	margin-bottom: 5rem;
+	text-align: center;
+}
+.case__button {
+	text-align: center;
+	margin: 0 auto;
+}
+.cases__img {
+	max-width: 51rem;
+	max-height: 63rem;
+}
+
+.cases-slider__dots {
+	position: absolute;
+	left: 50%;
+	bottom: 2rem;
+	transform: translateX(-50%);
+	list-style: none;
+	display: flex !important;
+	li {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		transition: background-color 0.3s;
+		background-color: $whiteColor;
+		cursor: pointer;
+		margin-right: 0.8rem;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover,
+		&.slick-active {
+			background-color: $hoverColor !important;
+		}
+		button {
+			background-color: transparent;
+			font-size: 0;
+		}
+	}
+}

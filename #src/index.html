@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./_head.html', {
+"title" : "Welcome to Bino"
+})
+
+<body id="top">
+
+	<!-- TODO Site Preloader -->
+	@@include('./templates/_preloader.html' {})
+	<!-- TODO Site Preloader -->
+
+	<div class="wrapper">
+		@@include('./_header.html', {})
+		<main class="page">
+
+			@@include('./templates/_features.html' {})
+
+			@@include('./templates/_history.html' {})
+
+			@@include('./templates/_services.html' {})
+
+			@@include('./templates/_portfolio.html' {})
+
+			@@include('./templates/_cases.html' {})
+
+			@@include('./templates/_counts.html' {})
+
+			@@include('./templates/_prices.html' {})
+
+			@@include('./templates/_team.html' {})
+
+			@@include('./templates/_partners.html' {})
+
+			<!-- @@include('./templates/_blog.html' {}) -->
+
+			@@include('./templates/_contact.html' {})
+
+			@@include('./templates/_getstart.html' {})
+
+		</main>
+		@@include('./_footer.html', {})
+	</div>
+
+
+
+	<!-- TODO Script Files -->
+	<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+	<script src="./js/main.min.js"></script>
+
+</body>
+
+</html>

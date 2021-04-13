@@ -1,0 +1,38 @@
+.history {
+	padding: $padding;
+}
+.history-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.history__img {
+	flex-basis: 49%;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.history__info {
+	flex-basis: 49%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.history__title {
+	padding-left: 2rem;
+	border-left: 6px solid $hoverColor;
+	margin-bottom: 5rem;
+}
+.history__texts {
+	@include paragraphs();
+	margin-bottom: 5rem;
+}
+.button {
+	@include button();
+}
+.history__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

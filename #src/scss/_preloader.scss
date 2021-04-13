@@ -1,0 +1,47 @@
+.loader-background {
+	position: fixed;
+	z-index: 999999999;
+	background-color: #f4f5f9;
+	width: 100%;
+	height: 100%;
+	.loader {
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 0 solid transparent;
+		&::before,
+		&::after {
+			content: "";
+			width: inherit;
+			height: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			animation: loader 2s linear infinite;
+			opacity: 0;
+			border-radius: 50%;
+			border: 1em solid #e74c3c;
+		}
+		&::before {
+			animation-delay: 0.5s;
+		}
+	}
+}
+
+@keyframes loader {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}

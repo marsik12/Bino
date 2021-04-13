@@ -1,0 +1,33 @@
+$maxWidth: 1920;
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 320;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin button($width: 22.5rem, $height: 5.2rem, $bgColor: $linkColor, $fw: bold, $ls: 0.014rem) {
+	width: $width;
+	height: $height;
+	background-color: $bgColor;
+	color: $whiteColor;
+	font-family: $mainFont;
+	font-size: 1.4rem;
+	font-weight: $fw;
+	letter-spacing: $ls;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: $darken;
+	}
+}
+
+@mixin paragraphs($color: #999999, $fz: 1.4rem, $fw: 400, $ff: $secondFont, $lh: 2.5rem, $ta: left, $lsp: normal) {
+	font-size: $fz;
+	font-family: $ff;
+	color: $color;
+	font-weight: $fw;
+	line-height: $lh;
+	text-align: $ta;
+	letter-spacing: $lsp;
+}
