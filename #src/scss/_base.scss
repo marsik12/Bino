@@ -17,6 +17,17 @@
 	border: none;
 }
 
+::-webkit-scrollbar {
+	width: 1rem;
+}
+::-webkit-scrollbar-track {
+	background-color: $whiteColor;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $hoverColor;
+}
+
 a,
 a:visited,
 a:hover,
