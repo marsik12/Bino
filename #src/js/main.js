@@ -2,6 +2,7 @@
 @@include("../vendors/waypoints.min.js" {});
 @@include("../vendors/slick/slick.min.js", {});
 @@include("./countup.js", {});
+@@include("../../node_modules/wow.js/dist/wow.min.js");
 function testWebP(callback) {
 
 	var webP = new Image();
@@ -24,7 +25,7 @@ $('.slider').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
-	autoplaySpeed: 5000,
+	autoplaySpeed: 7000,
 	prevArrow: '<button type="button" class="slick-prev">&lsaquo;</button>',
 	nextArrow: '<button type="button" class="slick-next">&rsaquo;</button>',
 	pauseOnHover: false
@@ -76,3 +77,5 @@ $(document).ready(function ($) {
 		time: 3000
 	});
 });
+
+new WOW().init();

@@ -17,6 +17,7 @@ $maxWidth: 1920;
 	text-align: center;
 	text-transform: uppercase;
 	transition: background-color 0.3s;
+	overflow: hidden;
 	&:hover {
 		background-color: $darken;
 	}
