@@ -28,7 +28,21 @@ $('.slider').slick({
 	autoplaySpeed: 7000,
 	prevArrow: '<button type="button" class="slick-prev">&lsaquo;</button>',
 	nextArrow: '<button type="button" class="slick-next">&rsaquo;</button>',
-	pauseOnHover: false
+	pauseOnHover: false,
+	responsive: [
+		{
+			breakpoint: 767,
+			settings: {
+				arrows: false
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				arrows: false
+			}
+		}
+	]
 });
 
 $('.services-slider').slick({

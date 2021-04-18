@@ -3,15 +3,15 @@
 	background-color: $whiteColor;
 }
 .cases__title {
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .cases__subtitle {
 	@include paragraphs;
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .cases-wrapper {
-	margin-top: 7rem;
+	margin-top: 100 * (70 / 768) + vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;

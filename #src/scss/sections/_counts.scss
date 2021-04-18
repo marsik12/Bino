@@ -1,9 +1,9 @@
 .counts {
-	max-height: 51rem;
+	min-height: 100 * (510 / 768) + vh;
 	max-width: 100vw;
 	position: relative;
 	box-sizing: border-box;
-	padding: 16rem 0 14rem;
+	padding: 100 * (160 / 768) + vh 0 100 * (140 / 768) + vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,6 +27,26 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-basis: 50%;
+		margin-bottom: 100 * (50 / 768) + vh;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		flex-basis: 33.3333333%;
+		margin-bottom: 100 * (50 / 768) + vh;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-basis: 25%;
+		margin-bottom: 100 * (50 / 768) + vh;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
 }
 .counts__icon {
 	width: 109px;
@@ -36,7 +56,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 5rem;
+	margin-bottom: 100 * (50 / 768) + vh;
 	z-index: 50;
 	overflow: hidden;
 	transition: all 0.3s;

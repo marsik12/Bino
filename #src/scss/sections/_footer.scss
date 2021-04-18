@@ -6,11 +6,25 @@
 .footer-wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
+	@media (min-width: 320px) and (max-width: 575px) {
+		justify-content: center;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
 }
 .social-block {
 	display: flex;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .social-block__item {
 	position: relative;

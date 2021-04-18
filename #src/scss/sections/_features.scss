@@ -4,22 +4,25 @@
 }
 .features-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .features__item {
-	flex-basis: 23.5%;
+	flex: 1 1 23.5%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	@media (min-width: 320px) and (max-width: 575px) {
 		flex-basis: 100%;
+		margin-bottom: 3rem;
 	}
 	@media (min-width: 576px) and (max-width: 767px) {
 		flex-basis: 50%;
+		margin-bottom: 3rem;
 	}
 	@media (min-width: 768px) and (max-width: 991px) {
 		flex-basis: 33.3333333%;
+		margin-bottom: 3rem;
 	}
 }
 .features__item-headers {
@@ -87,4 +90,6 @@
 }
 .features__description {
 	@include paragraphs($blackColor, 1.2rem, 300, $secondFont, 2rem, center, 1.35px);
+	padding: 0 1rem;
+	box-sizing: border-box;
 }

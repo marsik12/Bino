@@ -3,16 +3,16 @@
 	background-color: $whiteColor;
 }
 .partners__title {
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .partners__subtitle {
 	@include paragraphs;
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 	line-height: 2.1rem;
 }
 .pt {
-	padding-top: 7rem;
+	padding-top: 100 * (70 / 768) + vh;
 }
 .partners-wrapper {
 	display: flex;
@@ -23,12 +23,27 @@
 	flex-basis: 18%;
 	height: 10rem;
 	background-color: $mainBgColor;
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
 	img {
 		display: inline-block;
+	}
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-basis: 48%;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		flex-basis: 32%;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-basis: 23.5%;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
 	}
 }

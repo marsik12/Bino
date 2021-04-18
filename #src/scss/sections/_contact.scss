@@ -3,12 +3,12 @@
 	background-color: $whiteColor;
 }
 .contact__title {
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .contact__subtitle {
 	@include paragraphs;
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 100 * (30 / 768) + vh;
 }
 .contact-wrapper {
 	display: flex;
@@ -25,13 +25,13 @@
 }
 .contact-info {
 	flex-basis: 40.8%;
-	padding: 3rem 9.5rem;
+	padding: 100 * (30 / 768) + vh 100 * (95 / 1366) + vw;
 	box-sizing: border-box;
 }
 .contact-info__item {
 	display: flex;
 	flex-direction: column;
-	margin: 2.75rem 0;
+	margin: 100 * (27.5 / 768) + vh 0;
 }
 .contact-info__title {
 	font-size: 2.4rem;
@@ -60,7 +60,7 @@
 }
 .contact-form {
 	flex-basis: 56.8%;
-	padding: 0 9.5rem;
+	padding: 0 100 * (95 / 768) + vh;
 	box-sizing: border-box;
 }
 .form {

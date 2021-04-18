@@ -6,27 +6,9 @@
 .header-top {
 	position: fixed;
 	width: 100vw;
-	padding: 4rem 0;
+	padding: 100 * (40 / 768) + vh 0;
 	z-index: 10000;
 	background: transparent;
-	@media (min-width: 320px) and (max-width: 575px) {
-		padding: 2rem 0;
-	}
-	@media (min-width: 576px) and (max-width: 767px) {
-		padding: 2rem 0;
-	}
-	@media (min-width: 768px) and (max-width: 991px) {
-		padding: 3rem 0;
-	}
-	@media (min-width: 992px) and (max-width: 1199px) {
-		padding: 3rem 0;
-	}
-	@media (min-width: 1200px) and (max-width: 1399px) {
-		padding: 3rem 0;
-	}
-	@media (min-width: 1400) {
-		padding: 4rem 0;
-	}
 }
 
 .header__navigation {
@@ -38,6 +20,7 @@
 	@media (min-width: 320px) and (max-width: 575px) {
 	}
 	@media (min-width: 576px) and (max-width: 767px) {
+		justify-content: center;
 	}
 	@media (min-width: 768px) and (max-width: 991px) {
 	}
@@ -49,8 +32,8 @@
 	}
 }
 .logo {
-	max-width: 15rem;
-	max-height: 6rem;
+	max-width: 100 * (150 / 1366) + vw;
+	max-height: 100 * (60 / 768) + vh;
 }
 .logo__img {
 	max-width: 100%;
@@ -64,7 +47,8 @@
 		display: none;
 	}
 	@media (min-width: 576px) and (max-width: 767px) {
-		display: none;
+		flex-basis: 100%;
+		margin-top: 100 * (20 / 768) + vh;
 	}
 	@media (min-width: 768px) and (max-width: 991px) {
 	}
@@ -172,11 +156,12 @@
 .slider__title {
 	margin-bottom: 3rem;
 	font-family: $secondFont;
-	font-size: 2.4rem;
+	font-size: 100 * (24 / 1366) + vw;
 	color: $whiteColor;
 	font-weight: 400;
 	text-transform: capitalize;
 	letter-spacing: 1.2px;
+	text-align: center;
 	z-index: 1;
 	@media (min-width: 320px) and (max-width: 575px) {
 		margin-bottom: 2rem;
@@ -200,16 +185,22 @@
 .slider__subtitle {
 	margin-bottom: 3rem;
 	font-family: $mainFont;
-	font-size: 6.5rem;
+	font-size: 100 * (65 / 1366) + vw;
 	text-align: center;
 	font-weight: 700;
 	letter-spacing: 6.5px;
 	color: $whiteColor;
 	z-index: 2;
+	// @media (min-width: 320px) and (max-width: 575px) {
+	// 	font-size: 4.5rem;
+	// }
+	// @media (min-width: 576px) and (max-width: 767px) {
+	// 	font-size: 4.5rem;
+	// }
 }
 .slider__description {
 	margin-bottom: 5rem;
-	width: 60rem;
+	max-width: 60rem;
 	text-align: center;
 	font-family: $mainFont;
 	font-size: 1.4rem;
@@ -225,6 +216,19 @@
 	align-items: center;
 	flex-wrap: wrap;
 	z-index: 4;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-direction: column;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
 	button {
 		@include button;
 		&:first-child {
@@ -267,6 +271,9 @@
 	box-shadow: 0 0 50px $hoverColor, 0 0 100px $hoverColor, 0 0 150px $hoverColor, 0 0 200px $hoverColor,
 		0 0 250px $hoverColor;
 	animation: animatedIconDown 3s linear infinite;
+	@media (max-height: 450px) {
+		display: none;
+	}
 }
 
 @keyframes animatedIconDown {
