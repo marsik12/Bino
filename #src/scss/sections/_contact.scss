@@ -20,6 +20,9 @@
 	@media (min-width: 576px) and (max-width: 991px) {
 		flex-direction: column;
 	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-wrap: nowrap;
+	}
 }
 .contact-wrapper__item {
 	display: flex;
@@ -34,7 +37,10 @@
 	}
 	@media (min-width: 576px) and (max-width: 991px) {
 		flex-direction: row;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-basis: 49%;
 	}
 }
 .contact-info {
@@ -46,6 +52,10 @@
 	}
 	@media (min-width: 576px) and (max-width: 991px) {
 		margin-bottom: 100 * (30 / 768) + vh;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-basis: 49%;
+		padding: 0;
 	}
 }
 .contact-info__item {
@@ -69,6 +79,20 @@
 	color: $hoverColor;
 	text-transform: uppercase;
 	margin-bottom: 1rem;
+	@media (min-width: 320px) and (max-width: 575px) {
+		font-size: 2rem;
+	}
+	@media (min-width: 576px) and (max-width: 767px) {
+		font-size: 2rem;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+	}
+	@media (min-width: 1400) {
+	}
 }
 .address {
 	a {
@@ -95,6 +119,9 @@
 	}
 	@media (min-width: 576px) and (max-width: 991px) {
 		padding: 3rem;
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		flex-basis: 49%;
 	}
 }
 .form {
