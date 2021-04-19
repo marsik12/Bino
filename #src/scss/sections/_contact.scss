@@ -14,6 +14,12 @@
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-direction: column;
+	}
+	@media (min-width: 576px) and (max-width: 991px) {
+		flex-direction: column;
+	}
 }
 .contact-wrapper__item {
 	display: flex;
@@ -22,16 +28,38 @@
 	background-color: $mainBgColor;
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@media (min-width: 576px) and (max-width: 991px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
 .contact-info {
 	flex-basis: 40.8%;
 	padding: 100 * (30 / 768) + vh 100 * (95 / 1366) + vw;
 	box-sizing: border-box;
+	@media (min-width: 320px) and (max-width: 575px) {
+		margin-bottom: 100 * (30 / 768) + vh;
+	}
+	@media (min-width: 576px) and (max-width: 991px) {
+		margin-bottom: 100 * (30 / 768) + vh;
+	}
 }
 .contact-info__item {
 	display: flex;
 	flex-direction: column;
 	margin: 100 * (27.5 / 768) + vh 0;
+	@media (min-width: 320px) and (max-width: 575px) {
+		flex: 1 1 100%;
+		align-items: center;
+	}
+	@media (min-width: 576px) and (max-width: 991px) {
+		flex: 1 1 100%;
+		align-items: center;
+	}
 }
 .contact-info__title {
 	font-size: 2.4rem;
@@ -60,8 +88,14 @@
 }
 .contact-form {
 	flex-basis: 56.8%;
-	padding: 0 100 * (95 / 768) + vh;
+	padding: 0 100 * (95 / 1366) + vw;
 	box-sizing: border-box;
+	@media (min-width: 320px) and (max-width: 575px) {
+		padding: 3rem;
+	}
+	@media (min-width: 576px) and (max-width: 991px) {
+		padding: 3rem;
+	}
 }
 .form {
 	width: 100%;

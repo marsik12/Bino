@@ -28,8 +28,15 @@
 	justify-content: center;
 	align-items: center;
 	box-shadow: 0px 1px 3px 0px rgba(31, 31, 31, 0.09);
+	transition: all 0.3s;
 	img {
 		display: inline-block;
+	}
+	@media (min-width: 992px) {
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: 0 0 5px #6a6a6a;
+		}
 	}
 	@media (min-width: 320px) and (max-width: 575px) {
 		flex-basis: 48%;

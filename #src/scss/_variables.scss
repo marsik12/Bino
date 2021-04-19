@@ -19,7 +19,7 @@ $darken: darken(
 // ? 87.848vw = 1200px;
 $min-width: 320px;
 $max-width: 100vw;
-$container: 100 * (1200 / 1366) + vw;
+$container: 120rem;
 
 // TODO Sections Top & Bottom Paddings
 $padding: 100 * (140 / 768) + vh 0;
